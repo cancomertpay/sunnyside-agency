@@ -9,7 +9,7 @@ function Title({ children }) {
       variants={titleContainer}
       initial="hidden"
       whileInView="show"
-      className={`font-fraunces text-3xl`}
+      className={`font-fraunces text-xl text-neutral-veryDarkDesaturatedBlue`}
     >
       {Array.from(children).map((letter, index) => (
         <motion.span variants={titleTextVariant2} key={index}>
