@@ -3,13 +3,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { titleContainer, titleTextVariant2 } from "../../utils/motion";
 
-function Title({ children }) {
+function Title({ children, fontSize, staggerChildren }) {
   return (
     <motion.h3
-      variants={titleContainer}
+      variants={titleContainer(staggerChildren)}
       initial="hidden"
       whileInView="show"
-      className={`font-fraunces text-xl text-neutral-veryDarkDesaturatedBlue`}
+      className={`font-fraunces ${fontSize ? fontSize : "text-3xl"}  text-neutral-veryDarkDesaturatedBlue`}
     >
       {Array.from(children).map((letter, index) => (
         <motion.span variants={titleTextVariant2} key={index}>

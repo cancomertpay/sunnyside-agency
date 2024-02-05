@@ -43,9 +43,10 @@ function Services() {
           variants={textVariant(0.3)}
           initial={"hidden"}
           whileInView={"show"}
-          className="uppercase text-neutral-veryDarkDesaturatedBlue text-1xl font-fraunces border-b-4 border-b-primary-yellow"
+          className="uppercase text-neutral-veryDarkDesaturatedBlue text-1xl font-fraunces flex flex-col items-center justify-center"
         >
-          Learn More
+          <div className="z-10">Learn More</div>
+          <div className="bg-primary-yellow w-32 h-2 -mt-[0.6rem] rounded-3xl" />
         </motion.div>
       </div>
     </Section>

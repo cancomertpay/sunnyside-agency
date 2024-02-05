@@ -10,7 +10,8 @@ export default {
       colors: {
         primary: {
           blue: "rgba(62,191,255,255)",
-          bgYellow: "#ffd600",
+          softBlue: "#5fcdfe",
+          green: "#9adacc",
           softRed: "hsl(7, 99%, 70%)",
           yellow: "hsl(51, 100%, 49%)",
           darkDesaturatedCyan: "hsl(167, 40%, 24%)",

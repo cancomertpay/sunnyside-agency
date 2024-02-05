@@ -62,13 +62,13 @@ export const textVariant = (delay) => ({
   },
 });
 
-export const titleContainer = {
+export const titleContainer = (staggerChildren) => ({
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: { staggerChildren: 0.05 },
+    transition: { staggerChildren: staggerChildren ? staggerChildren : 0.03 },
   },
-};
+});
 
 export const titleTextVariant2 = {
   hidden: { opacity: 0, y: 20 },

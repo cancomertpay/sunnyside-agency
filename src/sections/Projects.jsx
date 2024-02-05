@@ -26,7 +26,7 @@ function Projects() {
         />
       </div>
       <div className="h-1/2 box-border flex flex-col items-center justify-center px-5">
-        <Title>Stand out to the right audience</Title>
+        <Title fontSize={"text-2xl"}>Stand out to the right audience</Title>
         <motion.p
           variants={textVariant(0.2)}
           initial={"hidden"}
@@ -41,9 +41,10 @@ function Projects() {
           variants={textVariant(0.3)}
           initial={"hidden"}
           whileInView={"show"}
-          className="uppercase text-neutral-veryDarkDesaturatedBlue text-1xl font-fraunces border-b-4 border-b-primary-softRed"
+          className="uppercase text-neutral-veryDarkDesaturatedBlue text-1xl font-fraunces flex flex-col items-center justify-center"
         >
-          Learn More
+          <div className="z-10">Learn More</div>
+          <div className="bg-primary-softRed w-32 h-2 -mt-[0.6rem] rounded-3xl" />
         </motion.div>
       </div>
     </Section>

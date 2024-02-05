@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+
+// components
+import GraphicDesing from "../components/GraphicDesing";
+import Photography from "../components/Photography";
 
 function Workspaces() {
   return (
-    <div>Workspaces</div>
-  )
+    <>
+      <GraphicDesing />
+      <Photography />
+    </>
+  );
 }
 
-export default Workspaces
+export default Workspaces;
