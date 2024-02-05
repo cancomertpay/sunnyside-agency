@@ -10,6 +10,7 @@ function Title({
   uppercase,
   color,
   letterSpacing,
+  grid,
 }) {
   return (
     <motion.h3
@@ -20,7 +21,7 @@ function Title({
         color ? color : "text-neutral-veryDarkDesaturatedBlue"
       } ${fontSize ? fontSize : "text-3xl"} ${
         uppercase && "uppercase"
-      } text-center`}
+      } text-center ${grid && "grid grid-cols-2"}`}
     >
       {Array.from(children).map((letter, index) => (
         <motion.span variants={titleTextVariant2} key={index}>
