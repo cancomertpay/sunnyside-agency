@@ -2,7 +2,7 @@ import React from "react";
 
 function Section({ children, background }) {
   return (
-    <section className={`relative ${background ? background : ""} box-border`}>
+    <section className={`relative ${background ? background : ""}`}>
       {children}
     </section>
   );
