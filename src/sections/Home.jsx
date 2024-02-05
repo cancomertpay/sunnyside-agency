@@ -21,14 +21,14 @@ function Home() {
   return (
     <Section background={"bg-primary-blue"}>
       <Header />
-      <motion.h2
+      <motion.h1
         variants={textVariant(0.5)}
         initial={"hidden"}
         whileInView={"show"}
         className="font-fraunces text-center tracking-widest uppercase text-[11vw] text-neutral-white mt-[2.3rem]"
       >
         We are creatives
-      </motion.h2>
+      </motion.h1>
       <motion.div
         variants={fadeIn("down", "spring", 0.5, 1)}
         initial={"hidden"}
