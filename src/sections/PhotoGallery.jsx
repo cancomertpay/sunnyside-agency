@@ -1,10 +1,10 @@
 import React from "react";
 
 // images
-import coneImg from "../assets/images/mobile/image-gallery-cone.jpg";
-import milkBottlesImg from "../assets/images/mobile/image-gallery-milkbottles.jpg";
-import orangeImg from "../assets/images/mobile/image-gallery-orange.jpg";
-import sugarCubesImg from "../assets/images/mobile/image-gallery-sugar-cubes.jpg";
+import coneImg from "../assets/images/mobile/image-gallery-cone.webp";
+import milkBottlesImg from "../assets/images/mobile/image-gallery-milkbottles.webp";
+import orangeImg from "../assets/images/mobile/image-gallery-orange.webp";
+import sugarCubesImg from "../assets/images/mobile/image-gallery-sugar-cubes.webp";
 import Title from "../components/UI/Title";
 
 function PhotoGallery() {

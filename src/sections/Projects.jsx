@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
 // pink-glass image
-import pinkGlass from "../assets/images/mobile/pink-glass.png";
+import pinkGlass from "../assets/images/mobile/pink-glass.webp";
 
 function Projects() {
   return (

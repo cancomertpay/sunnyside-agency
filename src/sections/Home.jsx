@@ -15,7 +15,7 @@ import { fadeIn, slideIn, textVariant } from "../utils/motion";
 import iconArrowDown from "../assets/images/icon-arrow-down.svg";
 
 // orange image
-import orangeImg from "../assets/images/mobile/orange.png";
+import orangeImg from "../assets/images/mobile/orange.webp";
 
 function Home() {
   return (

@@ -1,6 +1,6 @@
-import emillyImg from "../assets/images/image-emily.jpg";
-import jennieImg from "../assets/images/image-jennie.jpg"
-import thomasImg from "../assets/images/image-thomas.jpg"
+import emillyImg from "../assets/images/image-emily.webp";
+import jennieImg from "../assets/images/image-jennie.webp"
+import thomasImg from "../assets/images/image-thomas.webp"
 
 const testimonials = [
   {

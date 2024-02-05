@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
 // egg img
-import eggImg from "../assets/images/mobile/egg.png";
+import eggImg from "../assets/images/mobile/egg.webp";
 
 function Services() {
   return (

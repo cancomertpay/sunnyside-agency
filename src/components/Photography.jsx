@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from "./UI/Section";
 import Title from "./UI/Title";
-import bgPhotography from "../assets/images/mobile/image-photography.jpg"
+import bgPhotography from "../assets/images/mobile/image-photography.webp"
 import { motion } from "framer-motion";
 import { fadeIn, slideIn } from "../utils/motion";
 
