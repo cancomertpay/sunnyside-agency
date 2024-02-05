@@ -3,6 +3,7 @@ import React from "react";
 // components
 import Header from "../components/header/Header";
 import Section from "../components/UI/Section";
+import Title from "../components/UI/Title";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -17,7 +18,6 @@ import iconArrowDown from "../assets/images/icon-arrow-down.svg";
 import orangeImg from "../assets/images/mobile/orange.png";
 
 function Home() {
-
   return (
     <Section background={"bg-primary-blue"}>
       <Header />
@@ -25,7 +25,7 @@ function Home() {
         variants={textVariant(0.5)}
         initial={"hidden"}
         whileInView={"show"}
-        className="uppercase tracking-widest text-[11vw] mt-[3rem] font-fraunces text-center text-neutral-white"
+        className="font-fraunces text-center tracking-widest uppercase text-[11vw] text-neutral-white mt-[2.3rem]"
       >
         We are creatives
       </motion.h2>
