@@ -1,7 +1,22 @@
+// sections
+import {
+  Home,
+  Projects,
+  Services,
+  Workspaces,
+  Testimonials,
+  Footer,
+} from "./sections/index";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div className="overflow-hidden box-border">
+      <Home />
+      <Services />
+      <Projects />
+      <Workspaces />
+      <Testimonials />
+      <Footer />
+    </div>
+  );
 }
