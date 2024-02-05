@@ -15,19 +15,18 @@ import eggImg from "../assets/images/mobile/egg.png";
 function Services() {
   return (
     <Section>
-      <div className="h-1/2 bg-primary-yellow box-border flex items-center justify-center">
+      <div className="h-[300px] bg-primary-yellow box-border flex items-center justify-center">
         <motion.img
           variants={fadeIn("right", "spring", 0.5, 1)}
           initial="hidden"
           whileInView="show"
           src={eggImg}
           alt="sunnyside agency egg image"
-          width={220}
-          height={220}
-          className="ml-12"
+          width={250}
+          className="pl-12 pt-2"
         />
       </div>
-      <div className="h-1/2 box-border py-10 px-6 flex flex-col items-center justify-center">
+      <div className="h-1/2 box-border py-16 px-6 flex flex-col items-center justify-center">
         <Title>Tranform your brand</Title>
         <motion.p
           variants={textVariant(0.2)}

@@ -1,4 +1,5 @@
 // sections
+import PhotoGallery from "./sections/PhotoGallery";
 import {
   Home,
   Projects,
@@ -16,6 +17,7 @@ export default function App() {
       <Projects />
       <Workspaces />
       <Testimonials />
+      <PhotoGallery />
       <Footer />
     </div>
   );

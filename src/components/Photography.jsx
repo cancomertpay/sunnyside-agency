@@ -21,7 +21,7 @@ function Photography() {
           whileInView="show"
           className="absolute bottom-12 right-0 left-0 mx-6 flex flex-col items-center justify-center text-center"
         >
-          <Title fontSize={"text-4xl"} staggerChildren={0.11}>Photography</Title>
+          <Title fontSize={"text-4xl"} staggerChildren={0.1}>Photography</Title>
           <p className="text-neutral-veryDarkDesaturatedBlue font-barlow pt-8">
             Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
           </p>
