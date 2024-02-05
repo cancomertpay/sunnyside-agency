@@ -13,7 +13,7 @@ function Title({
   grid,
 }) {
   return (
-    <motion.h3
+    <motion.h2
       variants={titleContainer(staggerChildren)}
       initial="hidden"
       whileInView="show"
@@ -28,7 +28,7 @@ function Title({
           {letter === " " ? "\u00A0" : letter}
         </motion.span>
       ))}
-    </motion.h3>
+    </motion.h2>
   );
 }
 
