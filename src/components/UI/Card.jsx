@@ -58,7 +58,7 @@ function Card({ image, title, text, color, isMobile }) {
           variants={textVariant(0.2)}
           initial={"hidden"}
           whileInView={"show"}
-          className={`text-neutral-darkGrayishBlue my-5 font-barlow text-sm`}
+          className={`text-neutral-darkGrayishBlue my-5 font-barlow text-sm lg:text-xl`}
         >
           {text}
         </motion.p>
