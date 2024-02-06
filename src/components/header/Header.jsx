@@ -18,7 +18,7 @@ function Header() {
       whileInView={"show"}
       className="sm:px-16 px-6 py-8 bg-transparent flex items-center justify-between"
     >
-      <img src={brandLogo} alt="sunnyside agency" />
+      <img className="md:w-[12vw]" src={brandLogo} alt="sunnyside agency" />
       <Navbar />
     </motion.header>
   );

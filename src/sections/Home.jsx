@@ -33,7 +33,7 @@ function Home() {
           variants={textVariant(0.5)}
           initial={"hidden"}
           whileInView={"show"}
-          className="font-fraunces text-center tracking-widest uppercase text-[11vw] text-neutral-white mt-[2.3rem] z-30 md:text-[5vw] md:mb-24"
+          className="font-fraunces text-center tracking-widest uppercase text-[11vw] text-neutral-white mt-[2.3rem] z-30 md:text-[4vw] md:mb-24 md:mt-20"
         >
           We are creatives
         </motion.h1>
