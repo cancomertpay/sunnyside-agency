@@ -17,7 +17,7 @@ import bgGraphicDesignDesktop from "../assets/images/desktop/image-graphic-desig
 function GraphicDesing() {
   const { isMobile } = useContext(isMobileContext);
   return (
-    <section className="relative md:w-1/2" background={"bg-primary-green"}>
+    <section className="relative md:w-1/2">
       <motion.img
         variants={slideIn("left", "spring", 0.3, 1)}
         initial={"hidden"}

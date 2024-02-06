@@ -70,14 +70,14 @@ function Card({ image, title, text, color, isMobile }) {
           onMouseOver={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <span className="flex flex-col items-center uppercase text-neutral-veryDarkDesaturatedBlue text-1xl font-fraunces md:w-fit cursor-pointer">
+          <div className="flex flex-col items-center uppercase text-neutral-veryDarkDesaturatedBlue text-1xl font-fraunces md:w-fit cursor-pointer">
             <p className="z-10">Learn More</p>
             <span
               className={`${
                 color === "pink" ? "bg-primary-softRed " : " bg-primary-yellow "
               } w-32 h-2 -mt-[0.6rem] rounded-3xl opacity-[0.5] ${isHovered && "opacity-[1]"} transition-opacity`}
             />
-          </span>
+          </div>
         </motion.div>
       </motion.div>
     </>

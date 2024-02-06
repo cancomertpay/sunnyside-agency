@@ -13,11 +13,13 @@ export default function App() {
   return (
     <div className="overflow-hidden box-border">
       <Home />
-      <Services />
-      <Projects />
-      <Workspaces />
-      <Testimonials />
-      <PhotoGallery />
+      <main>
+        <Services />
+        <Projects />
+        <Workspaces />
+        <Testimonials />
+        <PhotoGallery />
+      </main>
       <Footer />
     </div>
   );

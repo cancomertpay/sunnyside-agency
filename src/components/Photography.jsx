@@ -18,7 +18,7 @@ function Photography() {
   const { isMobile } = useContext(isMobileContext);
 
   return (
-    <section className="relative md:w-1/2" background={"bg-primary-softBlue"}>
+    <section className="relative md:w-1/2">
       <motion.img
         variants={slideIn("right", "spring", 0.3, 1)}
         initial={"hidden"}
