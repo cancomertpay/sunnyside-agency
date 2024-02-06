@@ -1,10 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+// root components
+import App from "./App.jsx";
+// global-css-document
+import "./index.css";
+// context-provider
+import IsMobileContextProvider from "./context/IsMobileContext.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <IsMobileContextProvider>
+      <App />
+    </IsMobileContextProvider>
+  </React.StrictMode>
+);

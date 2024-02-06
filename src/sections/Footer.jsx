@@ -5,10 +5,10 @@ import { fadeIn, slideIn } from "../utils/motion";
 
 // logos
 import BrandLogo from "../components/UI/BrandLogo";
-import facebook from "../assets/images/icon-facebook.svg";
-import instagram from "../assets/images/icon-instagram.svg";
-import pinterest from "../assets/images/icon-pinterest.svg";
-import twitter from "../assets/images/icon-twitter.svg";
+import Facebook from "../components/UI/Icons/Facebook";
+import Instagram from "../components/UI/Icons/Instagram";
+import Twitter from "../components/UI/Icons/Twitter";
+import Pinterest from "../components/UI/Icons/Pinterest";
 
 function Footer() {
   return (
@@ -22,26 +22,26 @@ function Footer() {
         <div className="pt-12 pb-6 flex items-center justify-center">
           <BrandLogo fill={"fill-primary-darkDesaturatedCyan"} />
         </div>
-        <div className="px-6">
-          <ul className="flex items-center justify-around pb-6 font-barlow text-primary-darkModerateCyan">
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
+        <div className="px-6 lg:px-0">
+          <ul className="flex items-center justify-around lg:justify-center lg:gap-[4rem] pb-6 font-barlow text-primary-darkModerateCyan ">
+            <li className="hover:text-neutral-white cursor-pointer transition-all">About</li>
+            <li className="hover:text-neutral-white cursor-pointer transition-all">Services</li>
+            <li className="hover:text-neutral-white cursor-pointer transition-all">Projects</li>
           </ul>
         </div>
-        <div className="px-20 py-16">
-          <ul className="flex items-center justify-around">
+        <div className="px-20 py-16 lg:px-0">
+          <ul className="flex items-center justify-around lg:justify-center lg:gap-[2rem]">
             <li>
-              <img src={facebook} alt="sunnyside agency facebook icon" />
+              <Facebook />
             </li>
             <li>
-              <img src={instagram} alt="sunnyside agency instagram icon" />
+              <Instagram />
             </li>
             <li>
-              <img src={twitter} alt="sunnyside agency twitter icon" />
+              <Twitter />
             </li>
             <li>
-              <img src={pinterest} alt="sunnyside agency pinterest icon" />
+              <Pinterest />
             </li>
           </ul>
         </div>

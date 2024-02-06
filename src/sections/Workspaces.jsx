@@ -6,10 +6,10 @@ import Photography from "../components/Photography";
 
 function Workspaces() {
   return (
-    <>
+    <div className="flex flex-col items-center justify-center md:flex-row">
       <GraphicDesing />
       <Photography />
-    </>
+    </div>
   );
 }
 

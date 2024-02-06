@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { motion } from "framer-motion";
-import { slideIn } from "../../utils/motion";
+import { fadeIn } from "../../utils/motion";
 
 function TestimonialCard({ item, slide }) {
   return (
     <motion.div
-      variants={slideIn(slide, "spring", 0.4, 1.3)}
+      variants={fadeIn(slide, "spring", 0.4, 1.3)}
       initial="hidden"
       whileInView={"show"}
       className="flex flex-col items-center justify-center px-10 mb-16"

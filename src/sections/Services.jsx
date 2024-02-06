@@ -1,52 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
+
+// context
+import { isMobileContext } from "../context/IsMobileContext";
 
 // components
 import Section from "../components/UI/Section";
-import Title from "../components/UI/Title";
+import Card from "../components/UI/Card";
 
 // framer motion
 import { motion } from "framer-motion";
 // variants
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, slideIn, textVariant } from "../utils/motion";
 
 // egg img
 import eggImg from "../assets/images/mobile/egg.webp";
+import eggImgDesktop from "../assets/images/desktop/image-transform.jpg";
 
 function Services() {
+  const { isMobile } = useContext(isMobileContext);
+
   return (
     <Section>
-      <div className="h-[300px] bg-primary-yellow box-border flex items-center justify-center">
-        <motion.img
-          variants={fadeIn("right", "spring", 0.5, 1)}
-          initial="hidden"
-          whileInView="show"
-          src={eggImg}
-          alt="sunnyside agency egg image"
-          width={250}
-          className="pl-12 pt-2"
+      <div className="md:flex md:flex-row-reverse md:items-center md:justify-center">
+        <Card
+          image={isMobile ? eggImg : eggImgDesktop}
+          title={"Tranform your brand"}
+          text={`We are a full service creative agency specializing in helping brands
+          grow fast. Engage your clients trough compelling visuals that do
+          most of the marketing for you.`}
+          color={"yellow"}
+          isMobile={isMobile}
         />
-      </div>
-      <div className="h-1/2 box-border py-16 px-6 flex flex-col items-center justify-center">
-        <Title>Tranform your brand</Title>
-        <motion.p
-          variants={textVariant(0.2)}
-          initial={"hidden"}
-          whileInView={"show"}
-          className="text-center text-neutral-darkGrayishBlue font-barlow my-5"
-        >
-          We are a full service creative agency specializing in helping brands
-          grow fast. Engage your clients trough compelling visuals that do most
-          of the marketing for you.
-        </motion.p>
-        <motion.div
-          variants={textVariant(0.3)}
-          initial={"hidden"}
-          whileInView={"show"}
-          className="uppercase text-neutral-veryDarkDesaturatedBlue text-1xl font-fraunces flex flex-col items-center justify-center"
-        >
-          <div className="z-10">Learn More</div>
-          <div className="bg-primary-yellow w-32 h-2 -mt-[0.6rem] rounded-3xl" />
-        </motion.div>
       </div>
     </Section>
   );
