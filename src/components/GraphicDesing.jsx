@@ -24,18 +24,18 @@ function GraphicDesing() {
         whileInView={"show"}
         src={isMobile ? bgGraphicDesign : bgGraphicDesignDesktop}
         alt="sunnyside agency graphic design image"
-        className="w-full"
+        className="w-full relative"
       />
       <motion.div
         variants={fadeIn("left", "spring", 0.5, 1)}
         initial="hidden"
         whileInView="show"
-        className="absolute bottom-12 right-0 left-0 mx-6 flex flex-col items-center justify-center text-center md:px-[10vw]"
+        className="absolute bottom-0 right-0 left-0 mx-6 flex flex-col items-center justify-center text-center lg:px-[16px] md:px-0"
       >
-        <Title fontSize={"text-4xl"} staggerChildren={0.05}>
+        <Title fontSize={"text-3xl md:text-lg lg:text-4xl"} staggerChildren={0.05}>
           Graphic Design
         </Title>
-        <p className="text-neutral-veryDarkDesaturatedBlue font-barlow pt-8">
+        <p className="text-neutral-veryDarkDesaturatedBlue font-barlow pt-8 md:text-sm md:pt-4 pb-12 md:pb-6 lg:pb-20 lg:text-lg lg:pt-8">
           Greate design makes you memorable. We deliver artwork that underscores
           your brand message and captures potential clients' attention.
         </p>

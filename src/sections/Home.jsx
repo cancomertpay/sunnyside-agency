@@ -33,7 +33,7 @@ function Home() {
           variants={textVariant(0.5)}
           initial={"hidden"}
           whileInView={"show"}
-          className="font-fraunces text-center tracking-widest uppercase text-[11vw] text-neutral-white mt-[2.3rem] z-30 md:text-[4vw] md:mb-24 md:mt-20"
+          className="font-fraunces text-center tracking-widest uppercase text-[11vw] text-neutral-white mt-[2.3rem] z-30 md:text-[4vw] md:mt-[0.3rem] lg:mb-24 lg:mt-[1vw]"
         >
           We are creatives
         </motion.h1>
@@ -43,7 +43,7 @@ function Home() {
           whileInView={"show"}
           className="flex items-center justify-center w-full mt-[2.2rem]"
         >
-          <img src={iconArrowDown} alt="sunny agency arrow down icon" />
+          <img className="md:h-[80px]" src={iconArrowDown} alt="sunny agency arrow down icon" />
         </motion.div>
       </div>
       <motion.div
