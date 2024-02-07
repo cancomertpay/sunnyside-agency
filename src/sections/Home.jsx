@@ -43,7 +43,7 @@ function Home() {
           whileInView={"show"}
           className="flex items-center justify-center w-full mt-[2.2rem]"
         >
-          <img className="md:h-[80px]" src={iconArrowDown} alt="sunny agency arrow down icon" />
+          <img className="md:h-[80px] lg:h-[114px]" src={iconArrowDown} alt="sunny agency arrow down icon" />
         </motion.div>
       </div>
       <motion.div
